@@ -3,6 +3,8 @@ import Product from '../Product/Product';
 import './Shop.css'
 import Myimage from '../../dibbo.jpg'
 import Break from '../Break/Break';
+import Exercise from '../Exercise/Exercise';
+
 
 const Shop = () => {
     const [products,setProduct] = useState([]);
@@ -33,6 +35,7 @@ const Shop = () => {
                    <h3>5.3hgt</h3>
                    </div>
                    <Break></Break>
+                  <Exercise></Exercise>
             </div>
         </div>
     );

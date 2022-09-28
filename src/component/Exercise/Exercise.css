@@ -1,0 +1,13 @@
+.exercise{
+    margin-top: 50px;
+    padding: 20px 0;
+}
+.activity-btn{
+    width: 100%;
+    padding: 15px;
+    background-color: #5D5FEF;
+    border: none;
+    color: white;
+    font-size: 17px;
+    margin-top: 10px;
+}

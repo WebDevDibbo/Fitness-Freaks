@@ -8,3 +8,24 @@
     grid-template-columns: repeat(3,1fr);
     padding: 20px;
 }
+.cart-container {
+    margin-top: 10px;
+}
+.cart-container .personal-info img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.personal-info{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.personal-info h4{
+    margin-left: 10px;
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 10px; */
+}

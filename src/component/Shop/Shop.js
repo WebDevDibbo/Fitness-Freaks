@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 import './Shop.css'
+import Myimage from '../../dibbo.jpg'
 
 const Shop = () => {
     const [products,setProduct] = useState([]);
@@ -21,7 +22,15 @@ const Shop = () => {
                }
             </div>
             <div className='cart-container'>
-                   <h3>Break</h3>
+                   <div className='personal-info'>
+                    <img src={Myimage} alt=""/>
+                    <h4>Dibbo Das</h4>
+                   </div>
+                   <div className='about'>
+                   <h3>60kg</h3>
+                   <h3>5.3hgt</h3>
+                   <h3>5.3hgt</h3>
+                   </div>
             </div>
         </div>
     );

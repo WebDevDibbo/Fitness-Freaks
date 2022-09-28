@@ -1,0 +1,20 @@
+.break{
+    margin-top: 50px;
+}
+.time{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 15px;
+    cursor: pointer;
+}
+.time span{
+    font-size: 14px;
+    font-weight: bold;
+}
+.time .unique{
+    background-color: #5D5FEF;
+    color: white;
+    padding: 8px ;
+    border-radius: 20px;
+}

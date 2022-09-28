@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 import './Shop.css'
 import Myimage from '../../dibbo.jpg'
+import Break from '../Break/Break';
 
 const Shop = () => {
     const [products,setProduct] = useState([]);
@@ -31,6 +32,7 @@ const Shop = () => {
                    <h3>5.3hgt</h3>
                    <h3>5.3hgt</h3>
                    </div>
+                   <Break></Break>
             </div>
         </div>
     );

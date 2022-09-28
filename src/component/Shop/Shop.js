@@ -10,17 +10,18 @@ const Shop = () => {
         .then(data => setProduct(data))
     },[])
     return (
-        <div>
-            <div className='logo'>
-                <h1 className='header-text'>Fitness Freaks</h1>
-            </div>
+        <div className='shop-container'>
+            
             <div className='product-container'>
                {
-                   products.map(product => <Product product = {product}></Product>)
+                   products.map(product => <Product 
+                    product = {product}
+                    key = {product.id}
+                    ></Product>)
                }
             </div>
             <div className='cart-container'>
-
+                   <h3>Break</h3>
             </div>
         </div>
     );

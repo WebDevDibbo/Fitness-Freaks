@@ -7,12 +7,19 @@ import Exercise from '../Exercise/Exercise';
 
 
 const Shop = () => {
-    const [products,setProduct] = useState([]);
+    const [products,setProducts] = useState([]);
+    const [cart, setCart] = useState([]);
     useEffect(() => {
         fetch('data.json')
         .then(res => res.json())
-        .then(data => setProduct(data))
+        .then(data => setProducts(data))
     },[])
+
+    const addToList = (product) => {
+        const newCart = [...cart,product]
+        setCart(newCart);
+        // console.log('clicked',product.id)
+    }
     return (
         <div className='shop-container'>
             
@@ -21,6 +28,7 @@ const Shop = () => {
                    products.map(product => <Product 
                     product = {product}
                     key = {product.id}
+                    addToList = {addToList}
                     ></Product>)
                }
             </div>
@@ -35,7 +43,7 @@ const Shop = () => {
                    <h3>5.3hgt</h3>
                    </div>
                    <Break></Break>
-                  <Exercise></Exercise>
+                  <Exercise cart = {cart}></Exercise>
             </div>
         </div>
     );

@@ -4,7 +4,7 @@ import './Shop.css'
 import Myimage from '../../dibbo.jpg'
 import Break from '../Break/Break';
 import Exercise from '../Exercise/Exercise';
-import { addToDb } from '../utilities/fakedb';
+import { addToDb, getStoredTime } from '../utilities/fakedb';
 
 
 const Shop = () => {
@@ -16,6 +16,12 @@ const Shop = () => {
         fetch('data.json')
         .then(res => res.json())
         .then(data => setProducts(data))
+    },[])
+
+    useEffect(() => {
+        const storedTime = getStoredTime();
+        console.log(storedTime)
+       
     },[])
 
     const addToList = (product) => {
@@ -46,9 +52,10 @@ const Shop = () => {
                     <h4>Dibbo Das</h4>
                    </div>
                    <div className='about'>
-                   <h3>60kg</h3>
-                   <h3>5.3hgt</h3>
-                   <h3>22yrs</h3>
+                   <h3>60kg <p>Weight</p></h3>
+                   <h3>5.3 <p>Height</p>
+                   </h3>
+                   <h3>22yrs<p>Age</p></h3>
                    </div>
                    <Break addToBreak = {addToBreak} ></Break>
                   <Exercise cart = {cart} breakTime = {breakTime}></Exercise>

@@ -17,6 +17,8 @@ const Exercise = (props) => {
 
          addBreak = parseInt(newTime);   
     }
+    
+    // toast added
     const completed = () => {
         toast("You have completed your activity succesfully")
     }

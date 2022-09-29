@@ -27,8 +27,8 @@ const Question = () => {
                 </div>
             </div>
             <div>
-                <h3>How does useEffect work?</h3>
-                <p>The motivation behind the introduction of useEffect Hook is to eliminate the side-effects of using class-based components. For example, tasks like updating the DOM, fetching data from API end-points, setting up subscriptions or timers, etc can be lead to unwarranted side-effects. Since the render method is to quick to produce a side-effect one needs to use life cycle methods to observe the side effects. For example, consider updating the document title for a simple counter component to the current value. On the initial render, we set the current clicked value to 0 clicks. So, this section is coded into the componentDidMount() method which is executed only once in the component life cycle. Then we create a button to increment the count state value by one on every click. As the count value state changes, we also need to update the document title again and for that, we need to write the same piece of code in componentDidUpdate(). The componentDidupdate() method is perfect for updating the counter value at any time the state changes but the repetition of code is one of the side-effects.</p>
+                <h3>What does useEffect do except loading data?</h3>
+                <p>The Effect Hook lets you perform side effects in function components.Data fetching, setting up a subscription, and manually changing the DOM in React components are all examples of side effects.There are two common kinds of side effects in React components: those that don't require cleanup, and those that do.</p>
             </div>
         </div>
     );

@@ -4,6 +4,7 @@ import './Shop.css'
 import Myimage from '../../dibbo.jpg'
 import Break from '../Break/Break';
 import Exercise from '../Exercise/Exercise';
+import { addToDb } from '../utilities/fakedb';
 
 
 const Shop = () => {
@@ -22,9 +23,10 @@ const Shop = () => {
         setCart(newCart);
     }
     const addToBreak = (e) => {
-        // const value = e.target.value;
-        const newBreakTime = [...breakTime,e.target.value];
+        const value = e.target.value;
+        const newBreakTime = [...breakTime,value];
         setBreakTime(newBreakTime);
+        addToDb(value);
        
     }
     

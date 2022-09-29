@@ -1,12 +1,13 @@
 .shop-container{
     display: grid;
     grid-template-columns: 4fr 1fr;
+    border: 1px solid red;
     
 }
 .product-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    padding: 100px 50px;
+    padding:50px;
 }
 .cart-container {
     margin-top: 10px;

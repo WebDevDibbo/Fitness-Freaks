@@ -1,7 +1,6 @@
 .shop-container{
     display: grid;
     grid-template-columns: 4fr 1fr;
-    border: 1px solid red;
     
 }
 .product-container{
@@ -40,9 +39,7 @@
         grid-template-columns: 1fr;
         padding: 0;
     }
-    /* .cart-container{
-        width: 100%;
-    } */
+    
     .exercise{
         text-align: center;
     }

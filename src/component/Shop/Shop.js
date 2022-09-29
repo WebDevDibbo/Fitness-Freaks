@@ -27,7 +27,6 @@ const Shop = () => {
         const newBreakTime = [...breakTime,value];
         setBreakTime(newBreakTime);
         addToDb(value);
-       
     }
     
     return (

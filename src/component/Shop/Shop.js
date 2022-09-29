@@ -9,6 +9,8 @@ import Exercise from '../Exercise/Exercise';
 const Shop = () => {
     const [products,setProducts] = useState([]);
     const [cart, setCart] = useState([]);
+    const [breakTime,setBreakTime] = useState([])
+
     useEffect(() => {
         fetch('data.json')
         .then(res => res.json())
@@ -18,11 +20,16 @@ const Shop = () => {
     const addToList = (product) => {
         const newCart = [...cart,product]
         setCart(newCart);
-        // console.log('clicked',product.id)
     }
+    const addToBreak = (e) => {
+        // const value = e.target.value;
+        const newBreakTime = [...breakTime,e.target.value];
+        setBreakTime(newBreakTime);
+       
+    }
+    
     return (
-        <div className='shop-container'>
-            
+        <div className='shop-container'>   
             <div className='product-container'>
                {
                    products.map(product => <Product 
@@ -40,10 +47,10 @@ const Shop = () => {
                    <div className='about'>
                    <h3>60kg</h3>
                    <h3>5.3hgt</h3>
-                   <h3>5.3hgt</h3>
+                   <h3>22yrs</h3>
                    </div>
-                   <Break></Break>
-                  <Exercise cart = {cart}></Exercise>
+                   <Break addToBreak = {addToBreak} ></Break>
+                  <Exercise cart = {cart} breakTime = {breakTime}></Exercise>
             </div>
         </div>
     );

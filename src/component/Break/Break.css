@@ -6,9 +6,12 @@
     justify-content: space-evenly;
     align-items: center;
     padding-top: 15px;
+}
+button{
+    border: none;
     cursor: pointer;
 }
-.time span{
+.time button{
     font-size: 14px;
     font-weight: bold;
 }

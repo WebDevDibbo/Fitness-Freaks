@@ -1,7 +1,7 @@
 [
     {
       "id": "632ddc9978feb7b723768ceb",
-      "Time" : "30s",
+      "Time" : "20s",
       "name": "Dumbell",
       "gymImg": "https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
@@ -13,25 +13,25 @@
     },
     {
       "id": "632ddc9961cb2fb2d0f8eda3",
-      "Time" : "30s",
+      "Time" : "40s",
       "name": "kettlebell",
       "gymImg":"https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id": "632ddc99d39cd4547ff47ebc",
-      "Time" : "30s",
+      "Time" : "50s",
       "name": "Leg press",
       "gymImg": "https://images.pexels.com/photos/136404/pexels-photo-136404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id": "632ddc99092ae87737fe9c59",
-      "Time" : "30s",
+      "Time" : "60s",
       "name": "Barbell Bench",
       "gymImg": "https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id": "632ddc99c1aa8f0cb5841d72",
-      "Time" : "30s",
+      "Time" : "40s",
       "name": "Climbing Rope",
       "gymImg":"https://images.pexels.com/photos/949126/pexels-photo-949126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
